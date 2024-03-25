@@ -14,7 +14,7 @@ pub fn Welcome() -> impl IntoView {
                 rounded
             ">
                 <div class="flex justify-center">
-                    <img src="/assets/leptos.jpg" class="h-24 rounded-full" alt="Leptos" />
+                    <img src="./assets/leptos.jpg" class="h-24 rounded-full" alt="Leptos" />
                 </div>
                 <div class="divide-y divide-gray-300/50">
                     <div class="py-8 text-base leading-7 space-y-6 text-gray-600 dark:text-slate-300">

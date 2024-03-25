@@ -3,20 +3,23 @@ mod pages;
 mod shared;
 
 use leptos::*;
-use leptos_router::*;
+// use leptos_router::*;
 
 use pages::*;
 
 #[component]
 pub fn App() -> impl IntoView {
     view! {
-        <Router>
-            <Routes>
-                <Route path="/" view=Welcome/>
-                <Route path="/*any" view=NotFound/>
-            </Routes>
-        </Router>
+        <Welcome />
     }
+    // view! {
+    //     <Router>
+    //         <Routes>
+    //             <Route path="/" view=Welcome/>
+    //             <Route path="/*any" view=NotFound/>
+    //         </Routes>
+    //     </Router>
+    // }
 }
 
 // INFO : This is just for adding more version to the welcome page
