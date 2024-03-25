@@ -1,0 +1,7 @@
+[[hooks]]
+stage = "pre_build"
+command = "sh"
+
+# Change the assets/style.css if you want to move it
+# Do not change the output without changing the index.html
+command_arguments = ["-c", "npx tailwindcss -i src/assets/style.css -o public/style.css"]

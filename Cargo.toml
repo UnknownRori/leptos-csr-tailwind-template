@@ -1,0 +1,29 @@
+[package]
+name = "leptos-csr-tailwind-template"
+version = "0.1.0"
+edition = "2021"
+authors = ["UnknownRori <68576836+UnknownRori@users.noreply.github.com>"]
+
+# INFO : This is just for adding more version to the welcome page
+# Remove it if you want to
+build = "build.rs"
+
+# INFO : This is just for adding more version to the welcome page
+# Remove it if you want to
+[build-dependencies]
+built = { version = "0.7", features = ["dependency-tree"] }
+
+[profile.release]
+opt-level = "z"
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+leptos = { version = "0.6.9", features = ["csr"] }
+leptos_router = { version = "0.6.9", features = ["csr"] }
